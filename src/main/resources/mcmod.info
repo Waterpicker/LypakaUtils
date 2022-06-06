@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "lypakautils",
+    "name": "LypakaUtils",
+    "description": "Just a collection of moderately useful things I usually use in almost every project",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Lypaka"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
