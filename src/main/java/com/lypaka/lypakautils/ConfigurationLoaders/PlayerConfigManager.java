@@ -132,37 +132,7 @@ public class PlayerConfigManager {
 
     public CommentedConfigurationNode getPlayerConfigNode (UUID uuid, Object... node) {
 
-        System.out.println("uuid ==" + uuid.toString());
-        System.out.println("this.modID == " + this.modID);
-        if (ConfigUtils.playerConfigNode.containsKey(this.modID)) {
 
-            System.out.println("Player configuration loader map contains key " + this.modID);
-            Map<UUID, CommentedConfigurationNode> map = ConfigUtils.playerConfigNode.get(this.modID);
-            if (map.containsKey(uuid)) {
-
-                System.out.println("Player configuration loader map contains key " + this.modID + " and it contains key " + uuid);
-                System.out.println("Value of commented configuration node inside of player uuid map: " + map.get(uuid));
-                System.out.println("if ^ that is null, that's a big problem");
-                if (map.get(uuid) != null) {
-
-                    System.out.println("Value of commented configuration node inside of player uuid map was detected as not null!");
-                    CommentedConfigurationNode ccn = map.get(uuid);
-                    System.out.println("Looking for node " + node + " in player's commented configuration node gotten from player uuid map");
-                    System.out.println("Value of node " + node + " == " + map.get(uuid).getNode(node));
-                    System.out.println("if ^ that is null, then that's the problem");
-                    if (map.get(uuid).getNode(node) != null) {
-
-                        System.out.println("Detected that node " + node + " in the player uuid map is not null, printing value: ");
-                        System.out.println(map.get(uuid).getNode(node));
-                        System.out.println("IF NOTHING IS NULL AT THIS POINT.....BLAME WATERDUDE");
-
-                    }
-
-                }
-
-            }
-
-        }
         return ConfigUtils.playerConfigNode.get(this.modID).get(uuid).getNode(node);
 
     }
