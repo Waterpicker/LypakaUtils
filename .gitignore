@@ -87,3 +87,11 @@ build/createMcpToSrg/output.tsrg
 .gradle/7.3/checksums/sha1-checksums.bin
 .gradle/7.3/checksums/md5-checksums.bin
 .gradle/7.3/checksums/checksums.lock
+LypakaUtils-src.zip
+build/tmp/reobfShadowJar/reobf-extraLines4504070974138577370.srg
+build/tmp/reobfShadowJar/reobf-default674010143460697417.srg
+build/tmp/reobfJar/reobf-extraLines6168445677772777881.srg
+build/tmp/reobfJar/reobf-default1515771070736214091.srg
+build/tmp/extractAnnotationsShadowJar/input2678525667868149649.jar
+build/tmp/extractAnnotationsJar/input5078969154849989721.jar
+build/libs/LypakaUtils-0.0.3.jar

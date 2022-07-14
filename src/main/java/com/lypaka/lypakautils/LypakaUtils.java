@@ -1,5 +1,7 @@
 package com.lypaka.lypakautils;
 
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
@@ -23,6 +25,13 @@ public class LypakaUtils {
     public void preInit (FMLPreInitializationEvent event) {
 
         logger.info("Loading LypakaUtils version: " + VERSION);
+
+    }
+
+    @Mod.EventHandler
+    public void onPostInit (FMLPostInitializationEvent event) {
+
+        MinecraftForge.EVENT_BUS.register(new JoinListener());
 
     }
 
