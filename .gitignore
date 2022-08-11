@@ -95,3 +95,6 @@ build/tmp/reobfJar/reobf-default1515771070736214091.srg
 build/tmp/extractAnnotationsShadowJar/input2678525667868149649.jar
 build/tmp/extractAnnotationsJar/input5078969154849989721.jar
 build/libs/LypakaUtils-0.0.3.jar
+build/libs/LypakaUtils-0.0.3-DEBUG.jar
+build/libs/LypakaUtils-0.0.3-DEBUG1.jar
+build/libs/LypakaUtils-0.0.4.jar

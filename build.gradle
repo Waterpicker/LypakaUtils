@@ -19,7 +19,7 @@ apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: 'com.github.johnrengelman.shadow'
 
 group = 'com.lypaka'
-version = '0.0.3'
+version = '0.0.4'
 archivesBaseName = 'LypakaUtils'
 
 minecraft {
