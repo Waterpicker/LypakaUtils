@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 
 public class GenerationsSprites {
 
-    public static ItemStack getPixelmonSprite (World world, String pokemonName, int form, String texture) {
+    public static ItemStack getPixelmonSprite (World world, String pokemonName, int form, String texture, boolean shiny) {
 
         EntityPixelmon pokemon = PokemonSpec.from(pokemonName).create(world);
         if (form > -1) {
@@ -21,29 +21,33 @@ public class GenerationsSprites {
             pokemon.setCustomSpecialTexture(texture);
 
         }
+        pokemon.setShiny(shiny);
         return ItemPixelmonSprite.getPhoto(pokemon);
 
     }
 
-    public static ItemStack getPixelmonSprite (World world, String pokemonName, int form) {
+    public static ItemStack getPixelmonSprite (World world, String pokemonName, int form, boolean shiny) {
 
         EntityPixelmon pokemon = PokemonSpec.from(pokemonName).create(world);
         pokemon.setForm(form);
+        pokemon.setShiny(shiny);
         return ItemPixelmonSprite.getPhoto(pokemon);
 
     }
 
-    public static ItemStack getPixelmonSprite (World world, String pokemonName, String texture) {
+    public static ItemStack getPixelmonSprite (World world, String pokemonName, String texture, boolean shiny) {
 
         EntityPixelmon pokemon = PokemonSpec.from(pokemonName).create(world);
         pokemon.setCustomSpecialTexture(texture);
+        pokemon.setShiny(shiny);
         return ItemPixelmonSprite.getPhoto(pokemon);
 
     }
 
-    public static ItemStack getPixelmonSprite (World world, String pokemonName) {
+    public static ItemStack getPixelmonSprite (World world, String pokemonName, boolean shiny) {
 
         EntityPixelmon pokemon = PokemonSpec.from(pokemonName).create(world);
+        pokemon.setShiny(shiny);
         return ItemPixelmonSprite.getPhoto(pokemon);
 
     }
