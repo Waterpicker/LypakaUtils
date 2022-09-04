@@ -18730,3 +18730,12 @@ build/libs/LypakaUtils-1.12.2-0.0.5.jar
 build/sources/main/java/com/lypaka/lypakautils/ConfigurationLoaders/WebsiteConfigManager.java
 build/sources/main/java/com/lypaka/lypakautils/ModVerification.java
 build/sources/main/java/com/lypaka/lypakautils/Webhook/DiscordWebhook.java
+build/classes/java/main/com/lypaka/lypakautils/PixelmonHandlers/RandomHandler.class
+build/libs/lypakautils-base-1.16.5-0.0.4.jar
+build/sources/main/java/com/lypaka/lypakautils/PixelmonHandlers/RandomHandler.java
+build/tmp/extractAnnotationsJar/input6160567907015612507.jar
+build/tmp/extractAnnotationsShadowJar/input634426247576038032.jar
+build/tmp/reobfJar/reobf-default2844433450420434800.srg
+build/tmp/reobfJar/reobf-extraLines979354215298200891.srg
+build/tmp/reobfShadowJar/reobf-default4211102582056823540.srg
+build/tmp/reobfShadowJar/reobf-extraLines3685656148457591944.srg
