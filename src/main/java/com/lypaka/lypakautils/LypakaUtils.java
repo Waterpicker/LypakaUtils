@@ -24,7 +24,7 @@ public class LypakaUtils {
 
     public static final String MOD_ID = "lypakautils";
     public static final String MOD_NAME = "LypakaUtils";
-    public static final String VERSION = "0.0.5";
+    public static final String VERSION = "0.0.6";
     public static final Logger logger = LogManager.getLogger("LypakaUtils");
     public static WebsiteConfigManager websiteConfigManager;
 
@@ -32,8 +32,8 @@ public class LypakaUtils {
     public void preInit (FMLPreInitializationEvent event) throws MalformedURLException {
 
         logger.info("Loading LypakaUtils version: " + VERSION);
-        websiteConfigManager = new WebsiteConfigManager("http://lypaka.com/verified.php");
-        websiteConfigManager.build();
+        //websiteConfigManager = new WebsiteConfigManager("http://lypaka.com/verified.php");
+        //websiteConfigManager.build();
 
     }
 
@@ -41,6 +41,7 @@ public class LypakaUtils {
     public void onPostInit (FMLPostInitializationEvent event) {
 
         MinecraftForge.EVENT_BUS.register(new JoinListener());
+        PixelmonVersionDetector.detectPixelmonVersionIfAny();
 
     }
 
@@ -48,7 +49,6 @@ public class LypakaUtils {
     public void onServerStarting (FMLServerStartingEvent event) throws FileNotFoundException {
 
         WorldMap.load();
-        PixelmonVersionDetector.detectPixelmonVersionIfAny(event.getServer());
 
     }
 

@@ -9,36 +9,35 @@ import java.util.Scanner;
 
 public class PixelmonVersionDetector {
 
-    public static String VERSION;
+    public static String VERSION = "None";
 
-    public static void detectPixelmonVersionIfAny (MinecraftServer server) throws FileNotFoundException {
+    public static void detectPixelmonVersionIfAny() {
 
         if (Loader.isModLoaded("pixelmon")) {
 
-            Scanner scanner = new Scanner(server.getFile("/logs/latest.log"));
-            boolean result = false;
-            while (scanner.hasNext() && !result) {
+            Class pixelmonClass;
+            try {
 
-                result = scanner.nextLine().contains("PixelmonGenerations");
-
-            }
-            scanner.close();
-
-            if (result) {
-
-                VERSION = "Generations";
-
-            } else {
-
+                pixelmonClass = Class.forName("com.pixelmonmod.pixelmon.Pixelmon");
                 VERSION = "Reforged";
+
+            } catch (ClassNotFoundException e) {
+
+                LypakaUtils.logger.info("Couldn't detect Pixelmon Reforged class file, searching for Pixelmon Generations class file...");
+                try {
+
+                    pixelmonClass = Class.forName("com.pixelmongenerations.core.Pixelmon");
+                    VERSION = "Generations";
+
+                } catch (ClassNotFoundException er) {
+
+                    LypakaUtils.logger.info("Couldn't detect Pixelmon Reforged or Pixelmon Generations class file, setting version to None");
+
+                }
 
             }
 
             LypakaUtils.logger.info("Detected Pixelmon version: " + VERSION);
-
-        } else {
-
-            VERSION = "None";
 
         }
 
