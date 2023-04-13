@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecd6ba4f-c842-487b-a9ce-40d66e2bc703" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/BasicConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/BasicConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/ComplexConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/ComplexConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/PlayerConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/PlayerConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ConfigurationLoaders/WebsiteConfigManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/FancyText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/FancyText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/JoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/LypakaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/LypakaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/ModVerification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PermissionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PermissionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Money/GenerationsMoney.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Money/ReforgedMoney.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/PixelmonVersionDetector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Pokedex/GenerationsPokedex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Pokedex/ReforgedPokedex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/RandomHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Sprites/GenerationsSprites.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/PixelmonHandlers/Sprites/ReforgedSprites.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/Webhook/DiscordWebhook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/WorldDimGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/WorldDimGetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/WorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lypaka/lypakautils/WorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OM8RkKaU5Ego56CsmmgAA48Pt2" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Git Repos/LypakaUtils"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.LypakaUtils [build]">
+    <configuration name="LypakaUtils [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.LypakaUtils [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecd6ba4f-c842-487b-a9ce-40d66e2bc703" name="Changes" comment="" />
+      <created>1681359083630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681359083630</updated>
+    </task>
+    <servers />
+  </component>
+</project>

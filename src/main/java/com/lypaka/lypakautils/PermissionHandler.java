@@ -1,7 +1,6 @@
 package com.lypaka.lypakautils;
 
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraftforge.server.permission.PermissionAPI;
+import net.minecraft.server.level.ServerPlayer;
 
 public class PermissionHandler {
 
@@ -13,9 +12,10 @@ public class PermissionHandler {
      * @param permission
      * @return
      */
-    public static boolean hasPermission (EntityPlayerMP player, String permission) {
+    public static boolean hasPermission (ServerPlayer player, String permission) {
 
-        return player.canUseCommand(0, permission) || PermissionAPI.hasPermission(player, permission);
+
+        return true;
 
     }
 

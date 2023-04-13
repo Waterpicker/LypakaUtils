@@ -1,12 +1,15 @@
 package com.lypaka.lypakautils.ConfigurationLoaders;
 
-import ninja.leaping.configurate.commented.CommentedConfigurationNode;
-import ninja.leaping.configurate.hocon.HoconConfigurationLoader;
-import ninja.leaping.configurate.loader.ConfigurationLoader;
 import org.apache.logging.log4j.Logger;
+import org.spongepowered.configurate.CommentedConfigurationNode;
+import org.spongepowered.configurate.hocon.HoconConfigurationLoader;
+import org.spongepowered.configurate.loader.ConfigurationLoader;
 
 import java.io.IOException;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -98,7 +101,7 @@ public class ComplexConfigManager {
 
                 }
 
-                HoconConfigurationLoader loader = HoconConfigurationLoader.builder().setPath(this.filePath[i]).build();
+                HoconConfigurationLoader loader = HoconConfigurationLoader.builder().path(this.filePath[i]).build();
                 try {
 
                     this.configLoad.add(i, loader);
@@ -141,7 +144,7 @@ public class ComplexConfigManager {
 
     public CommentedConfigurationNode getConfigNode (int index, Object... node) {
 
-        return this.configNode[index].getNode(node);
+        return this.configNode[index].node(node);
 
     }
 

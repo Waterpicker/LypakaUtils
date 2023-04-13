@@ -1,23 +1,24 @@
 package com.lypaka.lypakautils;
 
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.storage.ServerLevelData;
+import net.minecraftforge.server.ServerLifecycleHooks;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class WorldMap {
 
-    public static Map<String, World> worldMap = new HashMap<>();
+    public static Map<String, Level> worldMap = new HashMap<>();
 
     public static void load() {
 
-        for (WorldServer ws : FMLCommonHandler.instance().getMinecraftServerInstance().worlds) {
+        for (Level l : ServerLifecycleHooks.getCurrentServer().getAllLevels()) {
 
-            World w = ws.init();
-            String worldName = w.getWorldInfo().getWorldName();
-            worldMap.put(worldName, w);
+            if (l == null | !(l.getLevelData() instanceof ServerLevel)) continue;
+            ServerLevelData d = (ServerLevelData) l.getLevelData();
+            worldMap.put(d.getLevelName(), l);
 
         }
 
